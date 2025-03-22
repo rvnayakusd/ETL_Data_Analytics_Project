@@ -32,7 +32,7 @@ df.drop(columns=['list_price', 'cost_price' , 'discount_percent'], inplace=True)
 
 #load data into sql server using option
 
-engine = sal.create_engine("mssql+pyodbc://Popeye\\SQLEXPRESS02/master?driver=ODBC+Driver+17+for+SQL+Server")
+engine = sal.create_engine("mssql+pyodbc://servername/master?driver=ODBC+Driver+17+for+SQL+Server")
 
 conn=engine.connect()
 
